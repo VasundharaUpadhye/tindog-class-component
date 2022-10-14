@@ -4,10 +4,6 @@ import { fetchRandomDog } from "../redux/actions/randomDogActions";
 import { Button } from "react-bootstrap";
 
 class RandomDog extends Component {
-  componentDidMount() {
-    this.props.fetchRandomDog();
-  }
-
   handleClick = () => {
     this.props.fetchRandomDog();
   };
